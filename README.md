@@ -2,7 +2,7 @@
 
 ![SVG Utility](./assets/example.png)
 
-An SVG Making utility for the Bootcamp.
+An SVG Making utility for the Bootcamp. A demonstration video for the application may be found [here](./assets/preview.webm).
 
 ## Installation
 
