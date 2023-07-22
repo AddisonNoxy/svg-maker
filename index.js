@@ -76,7 +76,7 @@ function createFile(shape, text, textColor, shapeColor) {
     newShape.setColor(shapeColor);
     newShape.setTextColor(textColor);
 
-    fs.writeFile('./examples/example.svg', newShape.fullRender(), function (e) {
-        console.log("SVG file created!");
+    fs.writeFile('./examples/logo.svg', newShape.fullRender(), function (e) {
+        console.log("Generated logo.svg");
     });
 }
