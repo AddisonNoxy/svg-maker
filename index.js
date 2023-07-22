@@ -10,7 +10,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'What color will the text be in hexadecimals?',
+        message: 'What color will the text be?',
         name: 'textcolor'
     },
     {
@@ -21,7 +21,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'What color is the shape in hexadecimals?',
+        message: 'What color is the shape?',
         name: 'shapecolor'
     }
 ])
@@ -76,11 +76,7 @@ function createFile(shape, text, textColor, shapeColor) {
     newShape.setColor(shapeColor);
     newShape.setTextColor(textColor);
 
-    console.log(newShape.fullRender());
-
     fs.writeFile('./examples/example.svg', newShape.fullRender(), function (e) {
-        console.log("Error!");
+        console.log("SVG file created!");
     });
-
-    console.log("SVG file created!")
 }
